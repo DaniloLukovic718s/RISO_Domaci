@@ -1,5 +1,5 @@
 FROM python
 
-COPY DomaciPrviDeo.py
+COPY DomaciPrviDeo.py .
 
 CMD ["python", "DomaciPrviDeo.py"]
