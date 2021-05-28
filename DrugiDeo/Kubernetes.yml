@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: nginxapp
+    type: WebServer
+  spec: 
+    containers: 
+      - name: Basket
+      image: index:1.0
+      restartPolicy: OnFailure

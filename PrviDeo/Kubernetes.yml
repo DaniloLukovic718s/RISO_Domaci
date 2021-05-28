@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: myapp
+    type: API
+  spec: 
+    containers: 
+      - name: Basket
+      image: nazivimage:1.0
+      command: ["python", "DomaciPrviDeo.py"]
+      restartPolicy: OnFailure
+      
+
